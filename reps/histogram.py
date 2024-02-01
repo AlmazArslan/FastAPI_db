@@ -13,5 +13,4 @@ class HistogramRepository(BaseRepository):
 
 	async def get_by_hash_name(self, hash_name: str) -> Optional[Histogram]:
 		query = histogram.select().where(histogram.c.hash_name == hash_name)
-		logger.info(query)
 		return await self.database.fetch_one(query=query)
