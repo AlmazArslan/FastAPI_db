@@ -11,7 +11,9 @@ steam_id - "внутренний" steam'овский id предмета
 updated - timestamp последнего обновления цены
 
 GET /histogram/steam_ids - возвращает данные об предметах(отсортированных по steam_id)
+
 /histogram/steam_ids?limit=2&offset=0
+
 [
   {
     "app_id": 730,
@@ -32,7 +34,9 @@ GET /histogram/steam_ids - возвращает данные об предмет
 ]
 
 GET /histogram/hash_name - возвращает данные об предмете, по hash_name
+
 /histogram/hash_name?hash_name=MAC-10%20%7C%20Tornado%20%28Field-Tested%29
+
 {
   "app_id": 730,
   "hash_name": "MAC-10 | Tornado (Field-Tested)",
